@@ -74,7 +74,7 @@ public class ModesDictionary {
 		int lineNum = 0;
 		BufferedReader reader = null;
 		if (Options.getSpec().toLowerCase().contains("zos")) {
-			reader = Files.newBufferedReader(Paths.get(ottawaCsv), Charset.forName("IBM-1047"));
+			reader = Files.newBufferedReader(Paths.get(ottawaCsv));
 		} else {
 			reader = Files.newBufferedReader(Paths.get(ottawaCsv));
 		}
